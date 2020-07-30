@@ -1,4 +1,4 @@
-import time, amanobot, amanobot.helper, datetime, json, pprint, requests, re
+import time, amanobot, amanobot.helper, pprint, requests, re
 from bs4 import BeautifulSoup
 from amanobot.loop import MessageLoop
 from amanobot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
