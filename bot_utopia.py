@@ -50,6 +50,9 @@ class Chat(amanobot.helper.ChatHandler):
                 comando = msg['text'][:tamanho]
                 argumento = msg['text'][tamanho:]
                 if comando == '/check':
+                    if len(argumento) == 0:
+                        self.sender.sendMessage('Check de quem porra??')
+                        return
                     self.sender.sendMessage('Opa, ja pego as info...')
                     solo, flex = opGG(argumento).update()
                     try:
